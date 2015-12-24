@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <title>情報基礎2 #09</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body>
+    <div class="container">
+      <input type="range" id="seekBar" min="0" max="100">
+      <div class="flex lr">
+        <span id="played">00:00</span>
+        <span id="remaining"></span>
+      </div>
+      <audio preload src="00.mp3"></audio>
+      <div id="info">
+        <span id="title">Music title</span>
+        <span id="artist">Artist name</span>
+      </div>
+      <div id="controls" class="flex">
+        <button id="backward">-10</button>
+        <button id="play">
+          <i class="fa fa-play"></i>
+        </button>
+        <button id="pause">
+          <i class="fa fa-pause"></i>
+        </button>
+        <button id="forward">+10</button>
+      </div>
+      <div class="flex lr">
+        <i class="fa fa-volume-down"></i>
+        <input type="range" id="volume" min="0" max="100">
+        <i class="fa fa-volume-up"></i>
+      </div>
+    </div>
+    <script src="js/app.js"></script>
+  </body>
+</html>
